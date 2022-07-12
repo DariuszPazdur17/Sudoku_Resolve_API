@@ -1,0 +1,21 @@
+get http://localhost:3000/users
+
+###
+//tworzenie danychS
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name":"Darek",
+    "password":"darek123"
+}
+
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "name":"Darek",
+    "password":"darek123"
+}
+// autoryzacja

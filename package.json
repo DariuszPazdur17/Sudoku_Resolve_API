@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.2",
+    "mongodb": "^4.3.1",
+    "mongoose": "^6.1.7",
+    "node": "^17.3.1"
+  },
+  "name": "sudoku_solver",
+  "version": "1.0.2",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon index.js"
+  },
+  "author": "Dariusz Pazdur",
+  "license": "ISC",
+  "description": "soling_puzzles",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daro17/projects.git"
+  },
+  "keywords": [
+    "soling",
+    "js",
+    "html",
+    "css"
+  ],
+  "bugs": {
+    "url": "https://github.com/daro17/projects/issues"
+  },
+  "homepage": "https://github.com/daro17/projects#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
