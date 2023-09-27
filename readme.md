@@ -33,6 +33,14 @@ Start the server
 ```bash
   node index.js
 ```
+
+Open browser, enter the server adress
+
+```bash
+  http://localhost:3000/users/login
+```
+
+
 ## Screenshots
 
 ![App Screenshot](image1.png)
