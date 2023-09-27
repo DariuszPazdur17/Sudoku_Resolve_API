@@ -36,7 +36,7 @@ Start the server
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/ss#1.png)
+![App Screenshot](https://ibb.co/0VnjFpx)
 
 
 ## Authors
