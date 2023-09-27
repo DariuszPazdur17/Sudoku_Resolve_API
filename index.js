@@ -1,17 +1,19 @@
-const express = require ('express')
-const app = express ()
-const bcrypt = require ('bcrypt')
-const mongo = require('mongoose')
+const express = require('express');
+const app = express();
+const bcrypt = require('bcrypt');
+const mongoose = require('mongoose');
 
 
 app.use(express.json()) 
 
 const users = []
 
-mongo.connect("mongodb://localhost:27017",(err)=>{
-    if(!err) console.log('db connected');
-    else console.log('db ');
-})
+mongoose.set('strictQuery', false); // Set the strictQuery option
+
+mongoose.connect("mongodb://localhost:27017/mydb", (err) => {
+    if (!err) console.log('db connected');
+    else console.log('db ', err);
+});
 
 app.get('/users' ,(req,res) =>{
     res.json(users)//zapytanie, otrzymywane jest repozytorium w formacie json | query, the repository is received in json format
@@ -58,4 +60,4 @@ app.post('/users/login', async (req,res) =>{
 
 })
 
-app.listen(3000)//serwer nasłuchuje na 3000 | server 
+app.listen(3000);//serwer nasłuchuje na 4001 | server 

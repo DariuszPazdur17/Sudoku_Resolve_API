@@ -16,6 +16,6 @@ Content-Type: application/json
 
 {
     "name":"Darek",
-    "password":"darek123"
+    "password":"darek1234"
 }
 // autoryzacja
